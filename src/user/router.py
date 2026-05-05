@@ -12,7 +12,7 @@ user_routes=APIRouter(prefix="/user")
 def register(body:UserSchema, db:Session=Depends(get_db)):
     return controller.register(body,db)
 
-@user_routes.get("/login")
+@user_routes.post("/login")
 def login(body:LoginSchema,db:Session=Depends(get_db)):
     return controller.login(body,db)
 
