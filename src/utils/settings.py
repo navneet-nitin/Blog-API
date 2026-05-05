@@ -7,4 +7,3 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES:int
 
 settings=Settings()
-print(settings.DB_CONNECTION)
